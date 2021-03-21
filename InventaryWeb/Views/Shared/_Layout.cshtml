@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SuperMarket</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
+    @Styles.Render("~/Content/css")
+    <!-- Agregar un render con mi content/css/inventary-->
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="page-top">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("SuperMarket Ñam Ñam", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Productos", "Index", "Products")</li>
+                    <li>@Html.ActionLink("Categorias", "Index", "Categories")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Usuarios", "Index", "Users")</li>
+                    <li>@Html.ActionLink("Notas de Salida", "Index", "ExitNotes")</li>
+                    <li>@Html.ActionLink("Notas de Entrada", "Index", "EntryNotes")</li>
+                    <li>@Html.ActionLink("Proveedores", "Index", "Providers")</li>
+                    <li>@Html.ActionLink("Unidades", "Index", "Units")</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>-->
+
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+    </footer>
+    @Html.Partial("_Footer")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
